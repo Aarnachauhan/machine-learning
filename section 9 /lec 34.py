@@ -10,10 +10,21 @@ with open('example.txt','r') as file:
     for line in file:
         print(line)
 
-#to remove newline space .
+#to remove newline space/ newline charactor .
   with open('example.txt','r') as file:
     for line in file:
         print(line.strip())
+
+
+#to rewrite the file - everything will go away and only hello world will be written in example.txt
+with open('example.txt','w') as file:
+    file.write("hello world\n")
+
+
+'a' -> this is append 
+at the end it will be added
+
+
 
 
 
