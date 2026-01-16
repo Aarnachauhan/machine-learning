@@ -23,3 +23,31 @@ print(cat1.speak())
 
 o/p -> dog barks
     cat meows
+
+
+#polymorphism with absract base class 
+from abc import ABC , abstractmethod
+
+class Vehicle(ABC):
+    @abstractmethod
+    def self_engine(self):
+        pass
+
+class Car(Vehicle): #derived class 1
+    def self_engine(self):
+        return " car engine started"
+    
+class Motorcycle(Vehicle): #derived class 2
+    def self_engine(self):
+        return " motorcycle engine started"
+    
+def start_driving(vehicle): #function that demonstrate polymorphism
+    print(vehicle.self_engine())
+
+#car is object of CAR
+
+car=Car()
+start_driving(car)
+
+o/p = car engine started
+
