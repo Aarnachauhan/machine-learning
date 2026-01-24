@@ -1,0 +1,11 @@
+
+@app.route('/success/<score>')
+def success(score):
+    return f"marks u got is "+ score
+
+
+url in the browser:
+http://127.0.0.1:5000/success/55
+o/p
+marks u got is 55
+
